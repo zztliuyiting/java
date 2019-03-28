@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function makePhrases(){
+      var name=[
+        '陈泽宇','杨克琴','郭懿婷','陈欣楚','杨心怡','吴倩雯','龚佳怡','李可新','陆心怡',
+        '张璐','潘梦情','田金丰','葛梦蝶','刘祎婷','沈宇峰','王达','李一鸣','徐志豪','孙睿褀','徐杨',
+        '濮徐杰','陈卓豪','王昱','林超凡','孔易飞','王诚礼','杨凤旗','王韫韬','吴策','顾强','顾强','薛宇成',
+        '俞浩','陈李鹏','徐超','顾伟豪','王钦鹏','孙权','潘铖','朱铭杨','张程','杨吉']
+      var time=[
+        '中午' , '早上' , '傍晚' , '半夜']
+      var plays=[
+        '在操场' , '在教室' , '在家' , '在宿舍' , '在厕所']
+      var activity=[
+        '看书' , '看电视' , '打球' , '写作业' , '吃饭']
+      var rand1 = Math.floor(Math.random() * name.length);
+      var rand2 = Math.floor(Math.random() * time.length);
+      var rand3 = Math.floor(Math.random() * plays.length);
+      var rand4 = Math.floor(Math.random() * activity.length);
+      var phrase = name[rand1] + " " + time[rand2] + " " + plays[rand3] + " " + activity[rand4];
+      alert(phrase);
+    }
+    makePhrases();
+
+  </script>
+</body>
+</html>
